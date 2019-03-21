@@ -1,0 +1,233 @@
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    /*background-image: linear-gradient(to right, #2b5876,#4e4376);*/
+    background-color: #2b5876;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}   
+div.calculator{
+    width: 320px;
+    border: 0;
+    padding: 20px;
+    background-image: transparent;
+    border-radius: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 328px;
+}
+input{
+    width: 310px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    padding: 20px 10px 20px 0px;
+    border: 0;
+    font-weight: 600;
+    color: rgb(17, 17, 17);
+    background-color: white;
+    text-align: right;
+}
+input#displayResult{
+    margin-bottom: 0px;
+}
+
+button{
+    margin:0px 0px 0px 0px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 0;
+    color:  white;
+    width:80px;
+    height:50px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;transition: all ease-in-out 0.3s;
+}
+button:focus{
+    outline: none;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgba(150, 150, 150, 0.575);
+    color: white;
+}
+button#ac{
+    background-color: #DE7067;
+    color: white;
+    border-bottom: 1px solid grey;
+}
+
+button#result{
+    background-color: #7194AB;
+    border: 1px solid  #7194AB;
+    color: white;
+    width: 100%;
+    margin-right: 0px;
+}
+button.operand{
+    background-color: #489B73;
+    border: 1px solid  #489B73;
+    color: white;
+    border-bottom: 1px solid grey;
+}
+
+button#ac:hover{
+    background-color: #B9453C;  
+    color: white;
+}
+
+button#result:hover{
+    background-color: #47728E;
+    border: 2px solid  #47728E;
+    color: white;
+}
+button.operand:hover{
+    background-color: #2A8057;
+    border: 2px solid  #2A8057;
+    color: white;
+}
+
+div#history{
+    margin:0 20px; 
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    width: 50%;
+}
+#histry{
+    max-height: 290px;
+    overflow-y: scroll;
+}
+
+#history h2{
+    text-decoration: underline;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+#history p{
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+#history .historyHeading{
+    display: flex;
+    flex-wrap: wrap;
+}
+#history .historyHeading button{
+    margin-top: 25px;
+    margin-left: 150px;
+    font-size: 14px;
+    background-color: #DE7067;
+    border: 0;
+    color: white;
+}
+#history .historyHeading button:hover{
+    background-color: #B9453C;
+}
+
+@media all and (max-width:768px){
+    div#history{
+        margin-left: 20px;
+        width: 50vh;
+    }
+    #history .historyHeading button{
+        margin-top: 25px;
+        margin-left: 105px;
+    }
+    .container{
+        margin-left:32px;
+        margin-right:32px;
+    }
+}
+@media all and (max-width:575px){
+    div#history{
+        margin-left: 20px;
+        width: 100vw;
+    }
+    #history .historyHeading button{
+        margin-top: 10px;
+        margin-left: 140px;
+    }
+    .container{
+        margin-left:22px;
+        margin-right:22px;
+    }
+    div.calculator{
+        width: 320px;
+        border: 0;
+        padding: 10px 20px;
+        border-radius: 0px;
+        max-height: 328px;
+    }
+    button{
+        margin:0px 0px 0px 0px;
+        width:80px;
+        height:50px;
+    }
+    #histry{
+        max-height: 140px;
+    }
+    #history h2{
+        margin-top: 10px;
+    }
+}
+@media all and (max-width:400px){
+    div#history{
+        margin-left: 20px;
+        width: 100vw;
+    }
+    #history .historyHeading button{
+        margin-top: 10px;
+        margin-left: 113.2px;
+    }
+    .container{
+        margin-left:12px;
+        margin-right:12px;
+    }
+    div.calculator{
+        width: 300px;
+        border: 0;
+        padding: 15px;
+        padding-bottom: 10px;
+        border-radius: 0px;
+        max-height: 328px;
+    }
+    button{
+        margin:0px 0px 0px 0px;
+        width:75px;
+        height:50px;
+    }
+    #histry{
+        max-height: 140px;
+    }
+}
+@media all and (max-width:320px){
+    div#history{
+        margin-left: 20px;
+        width: 100vw;
+    }
+    #history .historyHeading button{
+        margin-top: 15px;
+        margin-left: 90px;
+    }
+    .container{
+        margin-left:2px;
+        margin-right:2px;
+    }
+    div.calculator{
+        width: 280px;
+        border: 0;
+        padding: 10px;
+        border-radius: 0px;
+        max-height: 328px;
+    }
+    button{
+        margin:0px 0px 0px 0px;
+        width:70px;
+        height:48px;
+    }
+    #histry{
+        max-height: 140px;
+    }
+}
